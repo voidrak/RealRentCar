@@ -18,7 +18,8 @@ use App\Models\Reservation;
 
 // ------------------- guest routes --------------------------------------- //
 Route::get('/', function () {
-    $cars = Car::take(6)->where('status', '=', 'available')->get();
+    $cars = Car::take(6)->where('status', '=', 'Available')->get();
+
     return view('home', compact('cars'));
 })->name('home');
 
@@ -38,15 +39,19 @@ Route::post('admin/login', [LoginController::class, 'login'])->name('admin.login
 
 Route::redirect('/admin', 'admin/login');
 
-Route::get('/privacy_policy',
-function () {
-    return view('Privacy_Policy');
-})->name('privacy_policy');
+Route::get(
+    '/privacy_policy',
+    function () {
+        return view('Privacy_Policy');
+    }
+)->name('privacy_policy');
 
-Route::get('/terms_conditions',
-function () {
-    return view('Terms_Conditions');
-})->name('terms_conditions');
+Route::get(
+    '/terms_conditions',
+    function () {
+        return view('Terms_Conditions');
+    }
+)->name('terms_conditions');
 
 
 // -------------------------------------------------------------------------//

@@ -6,7 +6,7 @@
         <div class=" text-start flex flex-col  gap-8 w-2/3">
 
             <p>
-                RealRentCar ("we," "us," or "our") operates the RealRentCar website and app
+                HabtamuCarRental ("we," "us," or "our") operates the HabtamuCarRental website and app
                 ("Platform"). This Privacy Policy outlines how we collect, use, and disclose personal information from users
                 of
                 the Platform. By accessing and using our Platform, you consent to the practices described in this Privacy

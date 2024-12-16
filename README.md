@@ -29,9 +29,9 @@ This is a car rental project developed for the graduation Project. It is built u
 
 ## Installation
 
-1. Clone the repository: https://github.com/Mohamed-Galdi/RealRentCar
+1. Clone the repository: https://github.com/Mohamed-Galdi/HabtamuCarRental
 
-2. Navigate to the project directory: `cd RealRentCar`
+2. Navigate to the project directory: `cd HabtamuCarRental`
 
 3. Install the dependencies using Composer: `composer install`
 

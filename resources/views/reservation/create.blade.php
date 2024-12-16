@@ -14,10 +14,10 @@
                     <p>
                         <span
                             class=" text-3xl font-bold text-pr-400 ms-3 me-1 border border-pr-400 p-2 rounded-md">{{ $car->price_per_day }}
-                            $</span>
+                            Br</span>
                         <span
                             class="text-lg font-medium text-red-500 line-through">{{ intval(($car->price_per_day * 100) / (100 - $car->reduce)) }}
-                            $
+                            Br
                         </span>
                     </p>
                 </div>
@@ -118,7 +118,7 @@
                 <div class=" w-full   mt-8 ms-8">
                     <p id="total-price" class="font-car text-gray-600 text-lg ms-2">Estimated Price: <span
                             class="mx-2 font-car text-md font-medium text-gray-700 border border-pr-400 p-2 rounded-md "> --
-                            $</span>
+                            Br</span>
                     </p>
                 </div>
                 <div id="mobile_submit_button" class="mt-12 w-full md:hidden  ">

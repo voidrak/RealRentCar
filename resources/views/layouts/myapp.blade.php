@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'RealRentCar') }}</title>
+    <title>{{ config('app.name', 'HabtamuCarRental') }}</title>
     {{-- jquery --}}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     {{-- sweet alert --}}
@@ -349,8 +349,8 @@
                             <h2 class="mb-6 text-sm font-semibold  uppercase text-white">Follow us</h2>
                             <ul class="text-gray-400">
                                 <li class="mb-4">
-                                    <a href="https://github.com/Mohamed-Galdi/RealRentCar" class="hover:underline "
-                                        target='_blank'>Github</a>
+                                    <a href="https://github.com/Mohamed-Galdi/HabtamuCarRental"
+                                        class="hover:underline " target='_blank'>Github</a>
                                 </li>
                                 <li>
                                     <a href="https://www.linkedin.com/in/mohamed-galdi/" class="hover:underline"
@@ -383,7 +383,7 @@
                             class="hover:underline">Galdi.dev™</a>. All Rights Reserved.
                     </span>
                     <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                        <a href="https://github.com/Mohamed-Galdi/RealRentCar" target='_blank'
+                        <a href="https://github.com/Mohamed-Galdi/HabtamuCarRental" target='_blank'
                             class="text-gray-500 hover:text-white">
                             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd"

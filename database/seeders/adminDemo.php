@@ -21,12 +21,12 @@ class adminDemo extends Seeder
             'role' => 'admin',
             'avatar' => '/images/avatars/avatar_2.jpg'
         ]);
-        User::create([
-            'name' => 'Test User',
-            'email' => 'test_user@email.com',
-            'password' => Hash::make('pass1234'),
-            'role' => 'client',
-            'avatar' => '/images/avatars/avatar_6.jpg'
-        ]);
+        // User::create([
+        //     'name' => 'Test User',
+        //     'email' => 'test_user@email.com',
+        //     'password' => Hash::make('pass1234'),
+        //     'role' => 'client',
+        //     'avatar' => '/images/avatars/avatar_6.jpg'
+        // ]);
     }
 }

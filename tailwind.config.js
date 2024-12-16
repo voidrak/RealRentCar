@@ -15,15 +15,15 @@ export default {
             },
             colors: {
                 pr: {
-                    100: "#fff5e6",
-                    200: "#ffd799",
-                    300: "#ffc366",
-                    400: "#ff9b00",
-                    500: "#e68c00",
-                    600: "#e68c00",
-                    700: "#cc7c00",
-                    800: "#b36d00",
-                    900: "#995d00",
+                    100: "#ffe7e1", // Lightest shade
+                    200: "#ffbfb1", // Lighter shade
+                    300: "#ff9983", // Light tint
+                    400: "#ff7154", // Slightly lighter than base
+                    500: "#ff4d30", // Base color
+                    600: "#e6452b", // Slightly darker
+                    700: "#cc3e27", // Darker shade
+                    800: "#b33722", // Darker
+                    900: "#992f1d", // Darkest shade
                 },
                 sec: {
                     100: "#fafafa",

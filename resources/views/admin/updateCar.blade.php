@@ -5,7 +5,8 @@
             enctype="multipart/form-data">
             @csrf
             @method('PUT')
-            <div class="md:w-2/3 w-5/6 md:px-24 px-4 pb-8 mx-auto mt-2 space-y-12 bg-white border-2 border-gray-600 rounded-md">
+            <div
+                class="md:w-2/3 w-5/6 md:px-24 px-4 pb-8 mx-auto mt-2 space-y-12 bg-white border-2 border-gray-600 rounded-md">
                 <div class=" border-b border-gray-900/10 pb-12">
                     <h2 class="mt-2 text-center font-bold text-lg leading-7 text-gray-900">Updating the car: <span
                             class="text-pr-400"> {{ $car->brand }} {{ $car->model }} {{ $car->engine }}</span></h2>
@@ -73,8 +74,7 @@
                             <label for="" class="block text-sm font-medium leading-6 text-gray-900">Reduce %
                             </label>
                             <div class="mt-2">
-                                <input type="number" name="reduce" id="reduce"
-                                    value="{{ $car->reduce }}"
+                                <input type="number" name="reduce" id="reduce" value="{{ $car->reduce }}"
                                     class="block w-full
                                     rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
                                     placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pr-400 sm:text-sm
@@ -145,7 +145,7 @@
                                 <select id="status" name="status"
                                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-pr-400 sm:max-w-xs sm:text-sm sm:leading-6">
                                     <option value="available"
-                                        {{ $car->insurance_status == 'available' ? 'selected' : '' }}>Available</option>
+                                        {{ $car->insurance_status == 'Available' ? 'selected' : '' }}>Available</option>
                                     <option value="unavailable"
                                         {{ $car->insurance_status == 'unavailable' ? 'selected' : '' }}>Unavailable
                                     </option>
