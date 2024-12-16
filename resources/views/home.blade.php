@@ -190,7 +190,7 @@
 
 
             <div class=" relative -bottom-[1px] mx-auto max-w-screen-xl  pb-16 ">
-                <img loading="lazy" src="/images/orange car 1.png" alt="" class="w-full">
+                <img loading="lazy" src="/images/HomeCar.png" alt="" class="w-full">
             </div>
 
         </div>
