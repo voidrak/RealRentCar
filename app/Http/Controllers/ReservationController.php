@@ -14,9 +14,7 @@ class ReservationController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-    }
+    public function index() {}
 
     /**
      * Show the form for creating a new resource.
@@ -74,7 +72,7 @@ class ReservationController extends Controller
         $car->status = 'Reserved';
         $car->save();
 
-        return view('thankyou',['reservation'=>$reservation] );
+        return view('thankyou', ['reservation' => $reservation]);
     }
 
     /**
@@ -120,8 +118,8 @@ class ReservationController extends Controller
         $reservation = Reservation::find($reservation->id);
         $reservation->status = $request->status;
         $car = $reservation->car;
-        if($request->status == 'Ended' || $request->status == 'Canceled' ){
-            $car->status = 'Available';
+        if ($request->status == 'Ended' || $request->status == 'Canceled') {
+            $car->status = 'available';
             $car->save();
         }
         $reservation->save();

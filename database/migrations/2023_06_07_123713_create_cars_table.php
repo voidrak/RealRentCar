@@ -19,7 +19,7 @@ return new class extends Migration
             $table->decimal('price_per_day', 8, 2);
             $table->string('image')->nullable();
             $table->string('quantity');
-            $table->string('status')->default('Available');
+            $table->string('status')->default('available');
             $table->integer('reduce');
             $table->integer('stars');
 

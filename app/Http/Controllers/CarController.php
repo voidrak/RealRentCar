@@ -8,6 +8,8 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 
 
+
+
 class CarController extends Controller
 {
     /**
@@ -59,7 +61,7 @@ class CarController extends Controller
             $imageName = $request->brand . '-' . $request->model . '-' . $request->engine . '-' . Str::random(10) . '.' . $request->file('image')->extension();
             $image = $request->file('image');
             $path = $image->storeAs('images/cars', $imageName);
-            $car->image = '/'.$path;
+            $car->image = '/' . $path;
         }
         $car->save();
 
@@ -132,18 +134,18 @@ class CarController extends Controller
     public function destroy(Car $car)
     {
         $car = Car::findOrFail($car->id);
-        
+
         // Check if the car has any active reservations
         $activeReservations = $car->reservations()->where('status', 'Active')->count();
-        
+
         if ($activeReservations > 0) {
             // Prevent deletion and return with error message
             return redirect()->route('cars.index')->with('error', 'Cannot delete car with active reservations.');
         }
-        
+
         // Delete inactive reservations
         $car->reservations()->where('status', '!=', 'Active')->delete();
-        
+
         // if ($car->image) {
         //     // Get the filename from the image path
         //     $filename = basename($car->image);
@@ -151,7 +153,7 @@ class CarController extends Controller
         //     // Delete the image file from the storage
         //     Storage::disk('local')->delete('images/cars/' . $filename);
         // }
-        
+
         $car->delete();
 
         return redirect()->route('cars.index')->with('success', 'Car deleted successfully.');
