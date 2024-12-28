@@ -16,6 +16,6 @@ I would like to acknowledge the original creator, Mohamed Galdi, for their work 
 - Car Listing and Management
 - Rental Booking and Management
 - Admin Panel for managing cars, bookings, and users
-- **[List any additional features you have implemented in your fork]**
+ 
 
  
