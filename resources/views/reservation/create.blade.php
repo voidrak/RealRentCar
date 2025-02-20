@@ -170,10 +170,10 @@
                             var pricePerDay = {{ $car->price_per_day }};
                             var totalPrice = duration * pricePerDay;
                             $('#duration span').text(duration + ' days');
-                            $('#total-price span').text(totalPrice + ' $');
+                            $('#total-price span').text(totalPrice + ' Br');
                         } else {
                             $('#duration span').text('-- days');
-                            $('#total-price span').text('-- $');
+                            $('#total-price span').text('-- Br');
                         }
                     } else {
                         $('#duration span').text('-- days');
