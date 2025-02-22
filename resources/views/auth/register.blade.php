@@ -1,6 +1,6 @@
 @extends('layouts.myapp')
 @section('content')
-    <div class="grid place-items-center " >
+    <div class="grid place-items-center ">
         <div class="border p-5 md:w-1/2 w-4/5 bg-sec-100 my-12">
             <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                 @csrf
@@ -32,37 +32,43 @@
 
                     <div class="grid grid-cols-3 ">
                         <div class="m-3">
-                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_1.jpg" id="avatar_1" class="hidden" >
+                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_1.jpg" id="avatar_1"
+                                class="hidden">
                             <label class="" for="avatar_1">
                                 <img loading="lazy" class=" avatar w-12 " src="/images/avatars/avatar_1.jpg" alt="">
                             </label>
                         </div>
                         <div class="m-3">
-                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_2.jpg" id="avatar_2" class="hidden">
+                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_2.jpg" id="avatar_2"
+                                class="hidden">
                             <label class="" for="avatar_2">
                                 <img loading="lazy" class=" avatar w-12" src="/images/avatars/avatar_2.jpg" alt="">
                             </label>
                         </div>
                         <div class="m-3">
-                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_3.jpg" id="avatar_3" class="hidden">
+                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_3.jpg" id="avatar_3"
+                                class="hidden">
                             <label class="" for="avatar_3">
                                 <img loading="lazy" class=" avatar w-12" src="/images/avatars/avatar_3.jpg" alt="">
                             </label>
                         </div>
                         <div class="m-3">
-                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_4.jpg" id="avatar_4" class="hidden">
+                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_4.jpg" id="avatar_4"
+                                class="hidden">
                             <label class="" for="avatar_4">
                                 <img loading="lazy" class=" avatar w-12" src="/images/avatars/avatar_4.jpg" alt="">
                             </label>
                         </div>
                         <div class="m-3">
-                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_5.jpg" id="avatar_5" class="hidden">
+                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_5.jpg" id="avatar_5"
+                                class="hidden">
                             <label class="" for="avatar_5">
                                 <img loading="lazy" class=" avatar w-12" src="/images/avatars/avatar_5.jpg" alt="">
                             </label>
                         </div>
                         <div class="m-3">
-                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_6.jpg"  id="avatar_6" class="hidden">
+                            <input type="radio" name="avatar_option" value="/images/avatars/avatar_6.jpg" id="avatar_6"
+                                class="hidden">
                             <label class="" for="avatar_6">
                                 <img loading="lazy" class=" avatar w-12" src="/images/avatars/avatar_6.jpg" alt="">
                             </label>
@@ -104,7 +110,7 @@
                 </div>
 
 
-                <div class="flex items-start mb-6">
+                {{-- <div class="flex items-start mb-6">
                     <div class="flex items-center h-5">
                         <input id="remember" type="checkbox" value=""
                             class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-pr-300 "
@@ -112,7 +118,7 @@
                     </div>
                     <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember
                         me</label>
-                </div>
+                </div> --}}
                 <button type="submit"
                     class="text-white bg-pr-400 hover:bg-pr-600 focus:ring-4 focus:outline-none focus:ring-pr-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-pr-600 dark:hover:bg-pr-700 dark:focus:ring-pr-800">Register</button>
 

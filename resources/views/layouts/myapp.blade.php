@@ -30,7 +30,7 @@
                 <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl drop-shadow-2xl">
                     {{-- LOGO --}}
                     <a href="{{ route('home') }}" class="flex items-center">
-                        <img loading="lazy" src="/images/SmallSquareLogo.jpg" class="mr-3 h-12" alt="Flowbite Logo" />
+                        <img loading="lazy" src="/images/carLogo.png" class="mr-3 h-12" alt="Flowbite Logo" />
                     </a>
 
                     {{-- login & Register buttons --}}
@@ -326,8 +326,7 @@
                 <div class="md:flex md:justify-between">
                     <div class="mb-12 md:mb-0 flex justify-center ">
                         <a href="" class="flex items-center">
-                            <img loading="lazy" src="/images/SmallSquareLogo.jpg" class="mr-3 h-24"
-                                alt="Logo" />
+                            <img loading="lazy" src="/images/carLogo.png" class="mr-3 h-24" alt="Logo" />
                         </a>
                     </div>
 

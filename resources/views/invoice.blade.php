@@ -129,11 +129,10 @@
             present your reservation invoice (digital or printed) and then pay and get your car</p>
         <div class="inv-header">
             <div>
-                <h2 style="color: #ff9b00">Real Rent Car</h2>
+                <h2 style="color: #ff9b00">Fetan Rent Car</h2>
                 <ul>
-                    <li>DR ANABDOUR AMMELEN </li>
-                    <li>TIZNIT</li>
-                    <li>+212637998660 | contact.galdi@gmail.com</li>
+                    <li>Kombolcha , Piassa </li>
+                    <li>+2511122336475</li>
                 </ul>
                 <h2>Client</h2>
                 <ul>
@@ -183,7 +182,7 @@
                     </tr>
                     <tr>
                         <th>tax</th>
-                        <td>(15%) {{ intval($reservation->total_price - ($reservation->total_price * 85) / 100) }}  $
+                        <td>(15%) {{ intval($reservation->total_price - ($reservation->total_price * 85) / 100) }} $
                         </td>
                     </tr>
                     <tr>
@@ -198,27 +197,27 @@
         <h3 style="text-align: center; margin-top: 30px">Thank you for choosing and trusting our car company ❤️</h3>
     </div>
     <script>
-          window.addEventListener('load', function() {
-        // Function to print the page
-        function printPage() {
-            window.print(); // Print the page
-            
-            // Close the window after printing or cancelling
-            setTimeout(function() {
-                window.close(); // Close the window
-            }, 1000); // Adjust the delay as needed (milliseconds)
-            
-            // After a short delay to allow the page to render, convert it to PDF
-            setTimeout(function() {
-                const pdf = new jsPDF(); // Create a new jsPDF instance
-                pdf.addHTML(document.body, function() {
-                    pdf.save('page_as_pdf.pdf'); // Save the PDF as 'page_as_pdf.pdf'
-                });
-            }, 2000); // Adjust the delay as needed (milliseconds)
-        }
+        window.addEventListener('load', function() {
+            // Function to print the page
+            function printPage() {
+                window.print(); // Print the page
 
-        printPage(); // Call the function to print the page and convert it to PDF
-    });
+                // Close the window after printing or cancelling
+                setTimeout(function() {
+                    window.close(); // Close the window
+                }, 1000); // Adjust the delay as needed (milliseconds)
+
+                // After a short delay to allow the page to render, convert it to PDF
+                setTimeout(function() {
+                    const pdf = new jsPDF(); // Create a new jsPDF instance
+                    pdf.addHTML(document.body, function() {
+                        pdf.save('page_as_pdf.pdf'); // Save the PDF as 'page_as_pdf.pdf'
+                    });
+                }, 2000); // Adjust the delay as needed (milliseconds)
+            }
+
+            printPage(); // Call the function to print the page and convert it to PDF
+        });
     </script>
 </body>
 

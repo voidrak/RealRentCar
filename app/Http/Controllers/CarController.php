@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Storage;
 class CarController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the car.
      */
     public function index()
     {
@@ -22,7 +22,7 @@ class CarController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new car.
      */
     public function create()
     {
@@ -30,7 +30,7 @@ class CarController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created car in storage.
      */
     public function store(Request $request)
     {
@@ -69,7 +69,7 @@ class CarController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified car.
      */
     public function show(Car $car)
     {
@@ -77,7 +77,7 @@ class CarController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified car.
      */
     public function edit(Car $car)
     {
@@ -86,7 +86,7 @@ class CarController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified car in storage.
      */
     public function update(Request $request, Car $car)
     {
@@ -129,7 +129,7 @@ class CarController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified car from storage.
      */
     public function destroy(Car $car)
     {

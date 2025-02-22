@@ -2,7 +2,7 @@
 @section('content')
     <div class="max-w-screen-xl p-3 mx-auto mt-10 bg-gray-200 rounded-md shadow-xl">
         <form action="">
-           <div class="flex justify-center md:flex-row flex-col md:gap-28 gap-4">
+            <div class="flex justify-center md:flex-row flex-col md:gap-28 gap-4">
                 <div class="flex justify-evenly md:flex-row flex-col md:gap-16 gap-2">
                     <input type="text" placeholder="brand" name="brand"
                         class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pr-400 sm:text-sm sm:leading-6">
@@ -30,7 +30,8 @@
         @forelse ($cars as $car)
             <div
                 class="relative flex flex-col w-full max-w-xs m-10 overflow-hidden bg-white border border-gray-100 rounded-lg shadow-md">
-                <a class="relative flex mx-3 mt-3 overflow-hidden h-60 rounded-xl" href="{{ route('car.reservation', ['car' => $car->id]) }}">
+                <a class="relative flex mx-3 mt-3 overflow-hidden h-60 rounded-xl"
+                    href="{{ route('car.reservation', ['car' => $car->id]) }}">
                     <img loading="lazy" class="object-cover" src="{{ $car->image }}" alt="product image" />
                     <span
                         class="absolute top-0 left-0 px-2 m-2 text-sm font-medium text-center text-white rounded-full bg-pr-400">{{ $car->reduce }}
@@ -83,7 +84,7 @@
                 <p class="mx-auto"></p>
             </div>
             <div class="mx-auto max-w-screen-xl h-[300px] items-center ">
-                <p class="mx-auto mt-[100px] text-4xl font-medium font-car  ">no car fond ! </p>
+                <p class="mx-auto mt-[100px] text-4xl font-medium font-car  ">no car found ! </p>
             </div>
             <div class="mx-auto max-w-screen-xl h-[300px] items-center ">
                 <p class="mx-auto"></p>

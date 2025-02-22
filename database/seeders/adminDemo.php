@@ -16,17 +16,17 @@ class adminDemo extends Seeder
     {
         User::create([
             'name' => 'Test Admin',
-            'email' => 'test_admin@email.com',
-            'password' => Hash::make('pass1234'),
+            'email' => 'admin@email.com',
+            'password' => Hash::make('12345678'),
             'role' => 'admin',
             'avatar' => '/images/avatars/avatar_2.jpg'
         ]);
-        // User::create([
-        //     'name' => 'Test User',
-        //     'email' => 'test_user@email.com',
-        //     'password' => Hash::make('pass1234'),
-        //     'role' => 'client',
-        //     'avatar' => '/images/avatars/avatar_6.jpg'
-        // ]);
+        User::create([
+            'name' => 'Test User',
+            'email' => 'test_user@email.com',
+            'password' => Hash::make('12345678'),
+            'role' => 'client',
+            'avatar' => '/images/avatars/avatar_6.jpg'
+        ]);
     }
 }
