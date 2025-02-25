@@ -24,11 +24,18 @@
                 <div
                     class="w-0 h-0 absolute -top-[29px] left-[215px] border-l-[20px] border-l-transparent border-b-[30px] border-b-gray-200 border-r-[20px] border-r-transparent">
                 </div>
+
+
                 <div class="p-3">
                     <h2 class="text-center mt-4 font-medium text-xl">What to do next !</h2>
                     <p class="text-lg font-car text-gray-600 text-justify">You can go to any of our stores near you and
                         present your reservation invoice (digital or printed) and then pay and get your car</p>
+                    <div class="bg-green-400 py-2 px-4 w-[150px] mx-auto text-white text-center rounded-lg">
+                        <a href="https://checkout.chapa.co/checkout/payment/Xq1qWdnj0D3TjYUj75m3u0K86JkkmziTIuKWsmymFn3VH"
+                            target="_blank" class="">Pay Now</a>
+                    </div>
                     <div class="mt-2 flex justify-center">
+
                         <a href="{{ route('invoice', ['reservation' => $reservation->id]) }}"
                             class="w-full p-2 m-2 text-white bg-pr-400 font-semibold rounded-md hover:bg-black flex justify-center items-center gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 576 512">

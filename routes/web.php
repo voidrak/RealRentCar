@@ -18,7 +18,7 @@ use App\Models\Reservation;
 
 // ------------------- guest routes --------------------------------------- //
 Route::get('/', function () {
-    $cars = Car::take(6)->where('status', '=', 'Available')->get();
+    $cars = Car::take(6)->where('status', '=', 'available')->get();
 
     return view('home', compact('cars'));
 })->name('home');
